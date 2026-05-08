@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="AICTE VAANI Sponsored Workshop on Next-Gen Security: Cryptography and Network Security">
+    <meta name="theme-color" content="#0a1929">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>AICTE VAANI Workshop | Cryptography & Network Security | JJCET</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'xs': '480px',
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1200px',
+                        '2xl': '1400px',
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                        '88': '22rem',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased">
+    
+    <!-- NAVBAR - Premium Intellectual Design -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-accent-bar"></div>
+        <div class="navbar-accent-bar-secondary"></div>
+        <div class="navbar-inner">
+            <!-- Logo & Brand -->
+            <a href="#" class="navbar-logo-group">
+                <img src="public/college.png" alt="JJCET" class="navbar-logo-img">
+                <div class="navbar-brand-stack">
+                    <span class="navbar-brand-main">JJCET</span>
+                    <span class="navbar-brand-sub">Computer Science & Engineering</span>
+                </div>
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="navbar-nav">
+                <a href="#" class="navbar-link">Home</a>
+                <a href="#about" class="navbar-link">About</a>
+                <a href="#workshop" class="navbar-link">Workshop</a>
+                <a href="#topics" class="navbar-link">Topics</a>
+                <a href="#coordinators" class="navbar-link">Team</a>
+                <a href="#speakers" class="navbar-link">Speakers</a>
+                <a href="#registration" class="navbar-link">Register</a>
+            </div>
+            
+            <!-- Right Section -->
+            <div class="navbar-right">
+                <a href="https://atalacademy.aicte.gov.in/login" target="_blank" class="navbar-cta">
+                    <span>ATAL Portal</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
+                <img src="public/aicte-logo.png" alt="AICTE" class="navbar-aicte-logo">
+                <button id="mobile-toggle" class="navbar-toggle">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu-wrapper hidden">
+        <a href="#" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#workshop" class="mobile-nav-link">Workshop</a>
+        <a href="#topics" class="mobile-nav-link">Topics</a>
+        <a href="#coordinators" class="mobile-nav-link">Team</a>
+        <a href="#speakers" class="mobile-nav-link">Speakers</a>
+        <a href="#registration" class="mobile-nav-link">Register</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Badge -->
+            <div class="hero-badge animate-onload">
+                <img src="public/aicte-logo.png" alt="AICTE" class="hero-badge-img">
+                <span class="hero-badge-dot"></span>
+                <span>VAANI Sponsored Workshop</span>
+            </div>
+            
+            <!-- Title -->
+            <h1 class="hero-title animate-onload delay-1">
+                <span class="hero-title-line">Next-Gen Security:</span>
+                <span class="hero-title-highlight">Cryptography & Network Security</span>
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="hero-subtitle tamil-text animate-onload delay-2">நவீன பாதுகாப்பு தொடர்பான 3 நாள் Workshop</p>
+            
+            <!-- Meta Info -->
+            <div class="hero-meta animate-onload delay-3">
+                <div class="hero-date-badge">
+                    <div class="hero-date-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="hero-date-text">
+                        <span class="hero-date-main">16–18 October 2026</span>
+                        <span class="hero-date-sub">Offline Workshop</span>
+                    </div>
+                </div>
+                <div class="hero-meta-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    <span>Offline Mode</span>
+                </div>
+                <div class="hero-meta-item">
+                    <img src="public/college-short.png" alt="JJCET" class="hero-meta-img">
+                    <span>JJCET, Trichy</span>
+                </div>
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="hero-actions animate-onload delay-4">
+                <a href="https://atalacademy.aicte.gov.in/login" target="_blank" class="btn-gold">
+                    Register via ATAL
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+                <a href="#workshop" class="btn-outline">
+                    Explore Workshop
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            
+            <p class="mt-6 text-gray-500 text-sm tamil-text animate-onload delay-5">ATAL Portal மூலம் பதிவு செய்யவும்</p>
+        </div>
+    </section>
+
+    <!-- COORDINATORS -->
+    <section id="coordinators" class="section section-white no-accent">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Workshop Coordinators</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Coordinator -->
+                <div class="coordinator-card">
+                    <div class="coordinator-badge">Coordinator</div>
+                    <div class="coordinator-avatar">
+                        <span class="coordinator-initials">PV</span>
+                    </div>
+                    <h3 class="coordinator-name">Dr. P. Vijayakumar</h3>
+                    <p class="coordinator-designation">Professor & Dean (R&D)</p>
+                    <div class="coordinator-divider"></div>
+                    <p class="coordinator-institution">J.J. College of Engineering & Technology</p>
+                    <p class="coordinator-location">Trichy</p>
+                </div>
+                
+                <!-- Co-Coordinator -->
+                <div class="coordinator-card">
+                    <div class="coordinator-badge co-coordinator">Co-Coordinator</div>
+                    <div class="coordinator-avatar">
+                        <span class="coordinator-initials">MP</span>
+                    </div>
+                    <h3 class="coordinator-name">Dr. M. Padma</h3>
+                    <p class="coordinator-designation">Associate Professor / CSE</p>
+                    <div class="coordinator-divider"></div>
+                    <p class="coordinator-institution">J.J. College of Engineering & Technology</p>
+                    <p class="coordinator-location">Trichy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT AICTE VAANI -->
+    <section id="about" class="section section-alt">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">About AICTE VAANI</h2>
+                <br>
+                <p class="section-subtitle">Valorising Advanced Academic Networking for India</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    AICTE has launched the VAANI scheme to enhance the quality of technical education in India by facilitating workshops, training programs, and knowledge-sharing initiatives across premier engineering institutions. This scheme aims to create a robust network of academic excellence and promote collaborative learning among students and faculty members.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Through VAANI, AICTE sponsors specialized workshops in emerging technology areas, enabling institutions to conduct hands-on training programs that bridge the gap between academic curriculum and industry requirements.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT WORKSHOP -->
+    <section id="workshop" class="section section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">About the Workshop</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    This three-day workshop on <strong class="text-[#0a1929]">Next-Gen Security: Cryptography and Network Security</strong> provides comprehensive training on modern cryptographic techniques and network security protocols.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Participants will gain hands-on experience through practical sessions, live demonstrations, and interactive discussions with industry experts.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKSHOP TOPICS -->
+    <section id="topics" class="section section-alt">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Contents to be Covered</h2>
+                <br>
+                <p class="section-subtitle tamil-text">Workshop மூலம் கற்கவுள்ள முக்கிய தலைப்புகள்</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Topic 1 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Security Fundamentals</h3>
+                    <p class="topic-desc">Security Trends, Attacks, Mechanisms and Services</p>
+                </div>
+                
+                <!-- Topic 2 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Mathematical Foundations</h3>
+                    <p class="topic-desc">GCD, Modular Arithmetic, Fermat & Euler Theorems, Chinese Remainder Theorem</p>
+                </div>
+                
+                <!-- Topic 3 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Classical Encryption</h3>
+                    <p class="topic-desc">Classical Encryption Techniques, Groups, Rings, Fields</p>
+                </div>
+                
+                <!-- Topic 4 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Encryption Techniques</h3>
+                    <p class="topic-desc">Substitution & Transposition Techniques, Primality Testing, Finite Fields, Discrete Logarithms</p>
+                </div>
+                
+                <!-- Topic 5 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Block Ciphers</h3>
+                    <p class="topic-desc">DES, Triple DES, AES, RC5</p>
+                </div>
+                
+                <!-- Topic 6 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 010 12M5 7a2 2 0 012-2m4 0a6 6 0 010-12M5 7v10a2 2 0 002 2h10a2 2 0 002-2V7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Public Key Cryptography</h3>
+                    <p class="topic-desc">RSA, Diffie-Hellman Key Exchange</p>
+                </div>
+                
+                <!-- Topic 7 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Elliptic Curve Cryptography</h3>
+                    <p class="topic-desc">ECC Principles and Applications</p>
+                </div>
+                
+                <!-- Topic 8 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Hash Functions & MAC</h3>
+                    <p class="topic-desc">Hash Functions, MAC, MD5, SHA, HMAC, CMAC</p>
+                </div>
+                
+                <!-- Topic 9 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Digital Signatures</h3>
+                    <p class="topic-desc">Digital Signatures, DSS, ElGamal, Schnorr</p>
+                </div>
+                
+                <!-- Topic 10 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354c4.667 0 8.646 3.979 8.646 8.646 0 4.667-3.979 8.646-8.646 8.646-4.667 0-8.646-3.979-8.646-8.646 0-4.667 3.979-8.646 8.646-8.646z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Authentication Protocols</h3>
+                    <p class="topic-desc">Authentication Protocols, Kerberos, X.509</p>
+                </div>
+                
+                <!-- Topic 11 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">IP Security & PKI</h3>
+                    <p class="topic-desc">IP Security, IPv6, IKE, PKI</p>
+                </div>
+                
+                <!-- Topic 12 -->
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="topic-title">Secure Transactions</h3>
+                    <p class="topic-desc">SSL/TLS, Secure Electronic Transactions, Recent Trends in Cryptography and Network Security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ELIGIBILITY -->
+    <section class="section section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Eligibility</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="info-box">
+                    <ul class="custom-list">
+                        <li>Students pursuing B.E./B.Tech in CS, IT, and related disciplines</li>
+                        <li>M.Tech/M.Sc students working in cybersecurity areas</li>
+                        <li>Faculty members from engineering colleges</li>
+                        <li>Research scholars working on security topics</li>
+                        <li>Industry professionals seeking security knowledge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUIDELINES -->
+    <section class="section section-alt">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Participation Guidelines</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="card">
+                    <div class="space-y-5">
+                        <div class="flex items-start gap-4">
+                            <span class="step-number">1</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Registration</h4>
+                                <p class="text-gray-600 text-sm">Register through ATAL Portal before the deadline</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="step-number">2</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Attendance</h4>
+                                <p class="text-gray-600 text-sm">Attend all three days of the workshop</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="step-number">3</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Participation</h4>
+                                <p class="text-gray-600 text-sm">Active involvement in hands-on sessions</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="step-number">4</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Certificate</h4>
+                                <p class="text-gray-600 text-sm">Complete all sessions to receive certificate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPORTANT DATES -->
+    <section class="section section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Important Dates</h2>
+                <p class="section-subtitle tamil-text">முக்கிய நிகழ்வு தேதிகள்</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <!-- Registration Deadline -->
+                <div class="date-card">
+                    <div class="date-card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <p class="date-card-label">Registration Deadline</p>
+                    <p class="date-card-date">01 October 2026</p>
+                    <div class="date-card-bar"></div>
+                </div>
+                
+                <!-- Selection Intimation -->
+                <div class="date-card">
+                    <div class="date-card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                        </svg>
+                    </div>
+                    <p class="date-card-label">Selection Intimation</p>
+                    <p class="date-card-date">07 October 2026</p>
+                    <div class="date-card-bar"></div>
+                </div>
+                
+                <!-- Workshop Dates -->
+                <div class="date-card highlight">
+                    <div class="date-card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <p class="date-card-label">Workshop Dates</p>
+                    <p class="date-card-date">16–18 October 2026</p>
+                    <div class="date-card-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section id="registration" class="section section-alt">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Registration</h2>
+                <p class="section-subtitle">Registration has to be done compulsorily through ATAL portal.</p>
+                <p class="section-subtitle tamil-text">ATAL Portal மூலம் பதிவு செய்யவும்</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="registration-card">
+                    <div class="flex flex-col lg:flex-row items-center gap-10">
+                        <div class="flex-shrink-0">
+                            <img src="public/aicte-logo.png" alt="AICTE" class="h-24 w-auto">
+                        </div>
+                        
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 mb-5">How to Register</h3>
+                            <ol class="space-y-4">
+                                <li class="flex items-center gap-3">
+                                    <span class="step-number">1</span>
+                                    <span class="text-gray-700 font-medium">Visit ATAL Portal</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="step-number">2</span>
+                                    <span class="text-gray-700 font-medium">Login or Register an account</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="step-number">3</span>
+                                    <span class="text-gray-700 font-medium">Search for the workshop title</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="step-number">4</span>
+                                    <span class="text-gray-700 font-medium">Submit your application</span>
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <div class="flex-shrink-0">
+                            <a href="https://atalacademy.aicte.gov.in/login" target="_blank" class="btn-gold">
+                                Register Now
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJECTIVES -->
+    <section class="section section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Objective of VAANI Scheme</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-5">
+                <div class="card">
+                    <div class="w-12 h-12 rounded-lg bg-[#c9a227]/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="topic-title">Skill Development</h4>
+                    <p class="topic-desc">Enhance practical skills in cutting-edge technologies</p>
+                </div>
+                <div class="card">
+                    <div class="w-12 h-12 rounded-lg bg-[#0d7377]/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#0d7377]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h4 class="topic-title">Industry Alignment</h4>
+                    <p class="topic-desc">Align with industry requirements and emerging trends</p>
+                </div>
+                <div class="card">
+                    <div class="w-12 h-12 rounded-lg bg-[#0a1929]/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#0a1929]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="topic-title">Knowledge Sharing</h4>
+                    <p class="topic-desc">Exchange between academia and industry experts</p>
+                </div>
+                <div class="card">
+                    <div class="w-12 h-12 rounded-lg bg-[#8B1538]/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#8B1538]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="topic-title">Research Promotion</h4>
+                    <p class="topic-desc">Encourage research in emerging technology areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT INSTITUTE -->
+    <section class="section section-alt">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">About the Institute</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="card">
+                    <div class="flex flex-col lg:flex-row gap-8 items-start">
+                        <div class="flex-shrink-0">
+                            <img src="public/college-short.png" alt="JJCET" class="h-28 w-auto">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">J.J. College of Engineering & Technology</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                JJCET is a premier engineering institution located in Trichy, Tamil Nadu. Established with a vision to provide quality technical education, the college offers undergraduate and postgraduate programs in various engineering disciplines.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                The institution is approved by AICTE and affiliated with Anna University, Chennai. JJCET is committed to excellence in technical education with state-of-the-art infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT DEPARTMENT -->
+    <section class="section section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">About the Department</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="info-box">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Department of Computer Science & Engineering</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        The Department of CSE at JJCET is committed to producing highly skilled computer professionals through quality education and research. The department offers B.E. in Computer Science and Engineering.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        The department has well-equipped labs with modern computing facilities and experienced faculty members who are actively involved in research and consultancy.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        The department has a strong track record of placements in leading IT companies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTITUTIONAL LEADERSHIP -->
+    <section class="section section-alt">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Institutional Leadership</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Chief Patron -->
+                <div class="leadership-card">
+                    <div class="leadership-badge">Chief Patron</div>
+                    <div class="leadership-avatar">
+                        <span class="leadership-initials">SR</span>
+                    </div>
+                    <h3 class="leadership-name">Dr. S. Ramamoorthiy</h3>
+                    <p class="leadership-designation">Chairman</p>
+                    <div class="leadership-divider"></div>
+                    <p class="leadership-institution">J.J. Institutions &</p>
+                    <p class="leadership-institution">Sowdambikaa Group of Institutions</p>
+                </div>
+                
+                <!-- Patron -->
+                <div class="leadership-card">
+                    <div class="leadership-badge patron">Patron</div>
+                    <div class="leadership-avatar">
+                        <span class="leadership-initials">RC</span>
+                    </div>
+                    <h3 class="leadership-name">Shri R. Chenthur Selvan</h3>
+                    <p class="leadership-designation">Vice Chairman</p>
+                    <div class="leadership-divider"></div>
+                    <p class="leadership-institution">J.J. Institutions &</p>
+                    <p class="leadership-institution">Sowdambikaa Group of Institutions</p>
+                </div>
+                
+                <!-- Principal -->
+                <div class="leadership-card">
+                    <div class="leadership-badge principal">Principal</div>
+                    <div class="leadership-avatar">
+                        <span class="leadership-initials">PM</span>
+                    </div>
+                    <h3 class="leadership-name">Dr. P. Mathiyalagan</h3>
+                    <p class="leadership-designation">Principal</p>
+                    <div class="leadership-divider"></div>
+                    <p class="leadership-institution">J.J. College of Engineering</p>
+                    <p class="leadership-institution">& Technology, Trichy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESOURCE PERSONS -->
+    <section id="speakers" class="section section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Resource Persons</h2>
+                <p class="section-subtitle">Distinguished Experts from Academia & Industry</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Mr. P. Ramesh -->
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <span class="speaker-initials">PR</span>
+                    </div>
+                    <h3 class="speaker-name">Mr. P. Ramesh</h3>
+                    <p class="speaker-role">Director, Platform Engineering & Cybersecurity</p>
+                    <div class="speaker-divider"></div>
+                    <p class="speaker-org">ISB DQLabs, Chennai</p>
+                </div>
+                
+                <!-- Dr. L. Jegatha Deborah -->
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <span class="speaker-initials">LJ</span>
+                    </div>
+                    <h3 class="speaker-name">Dr. L. Jegatha Deborah</h3>
+                    <p class="speaker-role">Assistant Professor / CSE</p>
+                    <div class="speaker-divider"></div>
+                    <p class="speaker-org">UCE, Thindivanam</p>
+                </div>
+                
+                <!-- Dr. R. Nagarajan -->
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <span class="speaker-initials">RN</span>
+                    </div>
+                    <h3 class="speaker-name">Dr. R. Nagarajan</h3>
+                    <p class="speaker-role">Professor / Mathematics</p>
+                    <div class="speaker-divider"></div>
+                    <p class="speaker-org">JJCET, Trichy</p>
+                </div>
+                
+                <!-- Dr. P. Vijayakumar -->
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <span class="speaker-initials">PV</span>
+                    </div>
+                    <h3 class="speaker-name">Dr. P. Vijayakumar</h3>
+                    <p class="speaker-role">Professor & Dean (R&D)</p>
+                    <div class="speaker-divider"></div>
+                    <p class="speaker-org">JJCET, Trichy</p>
+                </div>
+                
+                <!-- Dr. S. Bose -->
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <span class="speaker-initials">SB</span>
+                    </div>
+                    <h3 class="speaker-name">Dr. S. Bose</h3>
+                    <p class="speaker-role">Professor / CSE</p>
+                    <div class="speaker-divider"></div>
+                    <p class="speaker-org">Anna University, Chennai</p>
+                </div>
+                
+                <!-- Dr. A. Vadivel -->
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <span class="speaker-initials">AV</span>
+                    </div>
+                    <h3 class="speaker-name">Dr. A. Vadivel</h3>
+                    <p class="speaker-role">Associate Professor, Computer Application</p>
+                    <div class="speaker-divider"></div>
+                    <p class="speaker-org">NIT Trichy</p>
+                </div>
+                
+                <!-- Dr. K. Kulothungan -->
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <span class="speaker-initials">KK</span>
+                    </div>
+                    <h3 class="speaker-name">Dr. K. Kulothungan</h3>
+                    <p class="speaker-role">Associate Professor / IST</p>
+                    <div class="speaker-divider"></div>
+                    <p class="speaker-org">Anna University, Chennai</p>
+                </div>
+                
+                <!-- Dr. I. Bremnavas -->
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <span class="speaker-initials">IB</span>
+                    </div>
+                    <h3 class="speaker-name">Dr. I. Bremnavas</h3>
+                    <p class="speaker-role">Professor</p>
+                    <div class="speaker-divider"></div>
+                    <p class="speaker-org">JAIN University, Bangalore</p>
+                </div>
+                
+                <!-- Mr. S. Boopalan -->
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <span class="speaker-initials">SB</span>
+                    </div>
+                    <h3 class="speaker-name">Mr. S. Boopalan</h3>
+                    <p class="speaker-role">Senior Technical Manager</p>
+                    <div class="speaker-divider"></div>
+                    <p class="speaker-org">Xoriant, Bangalore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Contact</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-2xl mx-auto">
+                <div class="card">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-[#0a1929]/10 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-[#0a1929]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Address</h4>
+                                <p class="text-gray-600 text-sm">J.J. College of Engineering & Technology<br>Trichy, Tamil Nadu</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Email</h4>
+                                <p class="text-gray-600 text-sm">[email@jjcet.ac.in]</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-[#0d7377]/10 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-[#0d7377]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Phone</h4>
+                                <p class="text-gray-600 text-sm">[Contact Number]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="public/college.png" alt="JJCET" class="footer-logo">
+                        <div>
+                            <span class="text-lg font-semibold">JJCET</span>
+                            <p class="text-sm text-gray-300">Dept. of CSE</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4 max-w-md">
+                        J.J. College of Engineering & Technology is committed to excellence in technical education and research.
+                    </p>
+                    <img src="public/aicte-logo.png" alt="AICTE" class="h-8 w-auto opacity-80">
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#workshop" class="footer-link">About Workshop</a></li>
+                        <li><a href="#topics" class="footer-link">Topics</a></li>
+                        <li><a href="#registration" class="footer-link">Registration</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>JJCET, Trichy</li>
+                        <li>Tamil Nadu, India</li>
+                        <li><a href="https://atalacademy.aicte.gov.in/login" target="_blank" class="text-[#c9a227] hover:underline">ATAL Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 J.J. College of Engineering & Technology. All rights reserved.</p>
+                <p class="mt-1">AICTE VAANI Sponsored Workshop</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
