@@ -50,15 +50,16 @@
             <!-- Logo & Brand -->
             <a href="#" class="navbar-logo-group">
                 <img src="public/college.png" alt="JJCET" class="navbar-logo-img">
-                <div class="navbar-brand-stack">
+                <img src="public/aicte-logo.png" alt="AICTE" class="navbar-aicte-logo">
+                <!-- <div class="navbar-brand-stack">
                     <span class="navbar-brand-main">JJCET</span>
                     <span class="navbar-brand-sub">Computer Science & Engineering</span>
-                </div>
+                </div> -->
             </a>
             
             <!-- Navigation Links -->
             <div class="navbar-nav">
-                <a href="#" class="navbar-link">Home</a>
+                <a href="#home" class="navbar-link">Home</a>
                 <a href="#about" class="navbar-link">About</a>
                 <a href="#workshop" class="navbar-link">Workshop</a>
                 <a href="#topics" class="navbar-link">Topics</a>
@@ -70,12 +71,15 @@
             <!-- Right Section -->
             <div class="navbar-right">
                 <a href="https://atalacademy.aicte.gov.in/login" target="_blank" class="navbar-cta">
-                    <span>ATAL Portal</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <span data-i18n="ctaATAL">ATAL Portal</span>
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
                 </a>
-                <img src="public/aicte-logo.png" alt="AICTE" class="navbar-aicte-logo">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">ENG</button>
+                    <button class="lang-btn" data-lang="ta" onclick="setLanguage('ta')">தமிழ்</button>
+                </div>
                 <button id="mobile-toggle" class="navbar-toggle">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -87,7 +91,7 @@
     
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="mobile-menu-wrapper hidden">
-        <a href="#" class="mobile-nav-link">Home</a>
+        <a href="#home" class="mobile-nav-link">Home</a>
         <a href="#about" class="mobile-nav-link">About</a>
         <a href="#workshop" class="mobile-nav-link">Workshop</a>
         <a href="#topics" class="mobile-nav-link">Topics</a>
@@ -98,23 +102,23 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
             <!-- Badge -->
             <div class="hero-badge animate-onload">
                 <img src="public/aicte-logo.png" alt="AICTE" class="hero-badge-img">
                 <span class="hero-badge-dot"></span>
-                <span>VAANI Sponsored Workshop</span>
+                <span data-i18n="heroBadge">VAANI Sponsored Workshop</span>
             </div>
             
             <!-- Title -->
             <h1 class="hero-title animate-onload delay-1">
-                <span class="hero-title-line">Next-Gen Security:</span>
-                <span class="hero-title-highlight">Cryptography & Network Security</span>
+                <span class="hero-title-line" data-i18n="heroTitleLine">Next-Gen Security:</span>
+                <span class="hero-title-highlight" data-i18n="heroTitleHighlight">Cryptography and Network Security</span>
             </h1>
             
             <!-- Subtitle -->
-            <p class="hero-subtitle tamil-text animate-onload delay-2">நவீன பாதுகாப்பு தொடர்பான 3 நாள் Workshop</p>
+            <p class="hero-subtitle animate-onload delay-2" data-i18n="heroSubtitle">Three Day Advanced Security Workshop</p>
             
             <!-- Meta Info -->
             <div class="hero-meta animate-onload delay-3">
@@ -125,8 +129,8 @@
                         </svg>
                     </div>
                     <div class="hero-date-text">
-                        <span class="hero-date-main">16–18 October 2026</span>
-                        <span class="hero-date-sub">Offline Workshop</span>
+                        <span class="hero-date-main" data-i18n="heroDateMain">16–18 October 2026</span>
+                        <span class="hero-date-sub" data-i18n="heroDateSub">Offline Workshop</span>
                     </div>
                 </div>
                 <div class="hero-meta-item">
@@ -158,7 +162,7 @@
                 </a>
             </div>
             
-            <p class="mt-6 text-gray-500 text-sm tamil-text animate-onload delay-5">ATAL Portal மூலம் பதிவு செய்யவும்</p>
+
         </div>
     </section>
 
@@ -166,7 +170,7 @@
     <section id="coordinators" class="section section-white no-accent">
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
-                <h2 class="section-title section-title-accent">Workshop Coordinators</h2>
+                <h2 class="section-title section-title-accent" data-i18n="coordTitle">Workshop Coordinators</h2>
                 <div class="section-divider"></div>
             </div>
             
@@ -204,18 +208,15 @@
     <section id="about" class="section section-alt">
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
-                <h2 class="section-title section-title-accent">About AICTE VAANI</h2>
+                <h2 class="section-title section-title-accent" data-i18n="aboutTitle">About the AICTE VAANI Scheme</h2>
                 <br>
-                <p class="section-subtitle">Valorising Advanced Academic Networking for India</p>
+                
                 <div class="section-divider"></div>
             </div>
             
             <div class="max-w-3xl mx-auto">
-                <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                    AICTE has launched the VAANI scheme to enhance the quality of technical education in India by facilitating workshops, training programs, and knowledge-sharing initiatives across premier engineering institutions. This scheme aims to create a robust network of academic excellence and promote collaborative learning among students and faculty members.
-                </p>
-                <p class="text-gray-700 text-lg leading-relaxed">
-                    Through VAANI, AICTE sponsors specialized workshops in emerging technology areas, enabling institutions to conduct hands-on training programs that bridge the gap between academic curriculum and industry requirements.
+                <p class="text-gray-700 text-lg leading-relaxed mb-6" data-i18n="aboutDesc">
+                    AICTE's initiative to enhance technical education through vernacular languages, empowering students in their native tongue.
                 </p>
             </div>
         </div>
@@ -225,12 +226,12 @@
     <section id="workshop" class="section section-white">
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
-                <h2 class="section-title section-title-accent">About the Workshop</h2>
+                <h2 class="section-title section-title-accent" data-i18n="workshopTitle">About the Workshop</h2>
                 <div class="section-divider"></div>
             </div>
             
             <div class="max-w-3xl mx-auto">
-                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6" data-i18n="workshopDesc">
                     This three-day workshop on <strong class="text-[#0a1929]">Next-Gen Security: Cryptography and Network Security</strong> provides comprehensive training on modern cryptographic techniques and network security protocols.
                 </p>
                 <p class="text-gray-700 text-lg leading-relaxed">
@@ -244,9 +245,8 @@
     <section id="topics" class="section section-alt">
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
-                <h2 class="section-title section-title-accent">Contents to be Covered</h2>
+                <h2 class="section-title section-title-accent" data-i18n="topicsTitle">Contents to be Covered in Workshop</h2>
                 <br>
-                <p class="section-subtitle tamil-text">Workshop மூலம் கற்கவுள்ள முக்கிய தலைப்புகள்</p>
                 <div class="section-divider"></div>
             </div>
             
@@ -458,7 +458,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
                 <h2 class="section-title section-title-accent">Important Dates</h2>
-                <p class="section-subtitle tamil-text">முக்கிய நிகழ்வு தேதிகள்</p>
+             
                 <div class="section-divider"></div>
             </div>
             
@@ -506,9 +506,9 @@
     <section id="registration" class="section section-alt">
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
-                <h2 class="section-title section-title-accent">Registration</h2>
-                <p class="section-subtitle">Registration has to be done compulsorily through ATAL portal.</p>
-                <p class="section-subtitle tamil-text">ATAL Portal மூலம் பதிவு செய்யவும்</p>
+                <h2 class="section-title section-title-accent" data-i18n="regTitle">Registration</h2>
+                <br>
+                <p class="section-subtitle" data-i18n="regDesc">Registration has to be done compulsorily through ATAL portal.</p>
                 <div class="section-divider"></div>
             </div>
             
@@ -524,19 +524,19 @@
                             <ol class="space-y-4">
                                 <li class="flex items-center gap-3">
                                     <span class="step-number">1</span>
-                                    <span class="text-gray-700 font-medium">Visit ATAL Portal</span>
+                                    <span class="text-gray-700 font-medium" data-i18n="regStep1">Visit ATAL Portal</span>
                                 </li>
                                 <li class="flex items-center gap-3">
                                     <span class="step-number">2</span>
-                                    <span class="text-gray-700 font-medium">Login or Register an account</span>
+                                    <span class="text-gray-700 font-medium" data-i18n="regStep2">Login or Register</span>
                                 </li>
                                 <li class="flex items-center gap-3">
                                     <span class="step-number">3</span>
-                                    <span class="text-gray-700 font-medium">Search for the workshop title</span>
+                                    <span class="text-gray-700 font-medium" data-i18n="regStep3">Search Workshop Title</span>
                                 </li>
                                 <li class="flex items-center gap-3">
                                     <span class="step-number">4</span>
-                                    <span class="text-gray-700 font-medium">Submit your application</span>
+                                    <span class="text-gray-700 font-medium" data-i18n="regStep4">Submit Application</span>
                                 </li>
                             </ol>
                         </div>
@@ -713,8 +713,8 @@
     <section id="speakers" class="section section-white">
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
-                <h2 class="section-title section-title-accent">Resource Persons</h2>
-                <p class="section-subtitle">Distinguished Experts from Academia & Industry</p>
+                <h2 class="section-title section-title-accent" data-i18n="speakersTitle">Resource Persons</h2>
+                <p class="section-subtitle" data-i18n="speakersDesc">Experts from academia and industry</p>
                 <div class="section-divider"></div>
             </div>
             
@@ -825,7 +825,7 @@
     <section id="contact" class="section section-alt">
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
-                <h2 class="section-title section-title-accent">Contact</h2>
+                <h2 class="section-title section-title-accent" data-i18n="contactTitle">Contact Details</h2>
                 <div class="section-divider"></div>
             </div>
             
@@ -920,6 +920,13 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initLanguage();
+        });
+    </script>
 </body>
 </html>
