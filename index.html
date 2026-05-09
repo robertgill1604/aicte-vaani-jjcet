@@ -62,10 +62,10 @@
                 <a href="#home" class="navbar-link">Home</a>
                 <a href="#about" class="navbar-link">About</a>
                 <a href="#workshop" class="navbar-link">Workshop</a>
-                <a href="#topics" class="navbar-link">Topics</a>
                 <a href="#coordinators" class="navbar-link">Team</a>
-                <a href="#speakers" class="navbar-link">Speakers</a>
+                <a href="#topics" class="navbar-link">Topics</a>
                 <a href="#registration" class="navbar-link">Register</a>
+                <a href="#speakers" class="navbar-link">Speakers</a>
             </div>
             
             <!-- Right Section -->
@@ -94,8 +94,8 @@
         <a href="#home" class="mobile-nav-link">Home</a>
         <a href="#about" class="mobile-nav-link">About</a>
         <a href="#workshop" class="mobile-nav-link">Workshop</a>
-        <a href="#topics" class="mobile-nav-link">Topics</a>
         <a href="#coordinators" class="mobile-nav-link">Team</a>
+        <a href="#topics" class="mobile-nav-link">Topics</a>
         <a href="#speakers" class="mobile-nav-link">Speakers</a>
         <a href="#registration" class="mobile-nav-link">Register</a>
         <a href="#contact" class="mobile-nav-link">Contact</a>
@@ -148,13 +148,13 @@
             
             <!-- CTA Buttons -->
             <div class="hero-actions animate-onload delay-4">
-                <a href="https://atalacademy.aicte.gov.in/login" target="_blank" class="btn-gold">
+                <a href="https://atalacademy.aicte.gov.in/login" target="_blank" class="btn-gold" data-i18n="reg_1">
                     Register via ATAL
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg>
                 </a>
-                <a href="#workshop" class="btn-outline">
+                <a href="#workshop" class="btn-outline" data-i18n="ex_wk_1">
                     Explore Workshop
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -166,44 +166,7 @@
         </div>
     </section>
 
-    <!-- COORDINATORS -->
-    <section id="coordinators" class="section section-white no-accent">
-        <div class="max-w-7xl mx-auto">
-            <div class="section-heading">
-                <h2 class="section-title section-title-accent" data-i18n="coordTitle">Workshop Coordinators</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Coordinator -->
-                <div class="coordinator-card">
-                    <div class="coordinator-badge">Coordinator</div>
-                    <div class="coordinator-avatar">
-                        <span class="coordinator-initials">PV</span>
-                    </div>
-                    <h3 class="coordinator-name">Dr. P. Vijayakumar</h3>
-                    <p class="coordinator-designation">Professor & Dean (R&D)</p>
-                    <div class="coordinator-divider"></div>
-                    <p class="coordinator-institution">J.J. College of Engineering & Technology</p>
-                    <p class="coordinator-location">Trichy</p>
-                </div>
-                
-                <!-- Co-Coordinator -->
-                <div class="coordinator-card">
-                    <div class="coordinator-badge co-coordinator">Co-Coordinator</div>
-                    <div class="coordinator-avatar">
-                        <span class="coordinator-initials">MP</span>
-                    </div>
-                    <h3 class="coordinator-name">Dr. M. Padma</h3>
-                    <p class="coordinator-designation">Associate Professor / CSE</p>
-                    <div class="coordinator-divider"></div>
-                    <p class="coordinator-institution">J.J. College of Engineering & Technology</p>
-                    <p class="coordinator-location">Trichy</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+   
     <!-- ABOUT AICTE VAANI -->
     <section id="about" class="section section-alt">
         <div class="max-w-7xl mx-auto">
@@ -211,7 +174,7 @@
                 <h2 class="section-title section-title-accent" data-i18n="aboutTitle">About the AICTE VAANI Scheme</h2>
                 <br>
                 
-                <div class="section-divider"></div>
+                <!-- <div class="section-divider"></div> -->
             </div>
             
             <div class="max-w-3xl mx-auto">
@@ -227,7 +190,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
                 <h2 class="section-title section-title-accent" data-i18n="workshopTitle">About the Workshop</h2>
-                <div class="section-divider"></div>
+                <!-- <div class="section-divider"></div> -->
             </div>
             
             <div class="max-w-3xl mx-auto">
@@ -240,14 +203,205 @@
             </div>
         </div>
     </section>
+    
+    <!-- OBJECTIVES -->
+    <section class="section section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Objective of VAANI Scheme</h2>
+                <!-- <div class="section-divider"></div> -->
+            </div>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-5">
+                <div class="card">
+                    <div class="w-12 h-12 rounded-lg bg-[#c9a227]/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="topic-title">Skill Development</h4>
+                    <p class="topic-desc">Enhance practical skills in cutting-edge technologies</p>
+                </div>
+                <div class="card">
+                    <div class="w-12 h-12 rounded-lg bg-[#0d7377]/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#0d7377]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h4 class="topic-title">Industry Alignment</h4>
+                    <p class="topic-desc">Align with industry requirements and emerging trends</p>
+                </div>
+                <div class="card">
+                    <div class="w-12 h-12 rounded-lg bg-[#0a1929]/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#0a1929]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="topic-title">Knowledge Sharing</h4>
+                    <p class="topic-desc">Exchange between academia and industry experts</p>
+                </div>
+                <div class="card">
+                    <div class="w-12 h-12 rounded-lg bg-[#8B1538]/10 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#8B1538]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="topic-title">Research Promotion</h4>
+                    <p class="topic-desc">Encourage research in emerging technology areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ABOUT INSTITUTE -->
+    <section class="section section-alt">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">About the Institute</h2>
+                <!-- <div class="section-divider"></div> -->
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="card">
+                    <div class="flex flex-col lg:flex-row gap-8 items-start">
+                        <div class="flex-shrink-0">
+                            <img src="public/college-short.png" alt="JJCET" class="h-28 w-auto">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">J.J. College of Engineering & Technology</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                JJCET is a premier engineering institution located in Trichy, Tamil Nadu. Established with a vision to provide quality technical education, the college offers undergraduate and postgraduate programs in various engineering disciplines.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                The institution is approved by AICTE and affiliated with Anna University, Chennai. JJCET is committed to excellence in technical education with state-of-the-art infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT DEPARTMENT -->
+    <section class="section section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">About the Department</h2>
+                <!-- <div class="section-divider"></div> -->
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="info-box">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Department of Computer Science & Engineering</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        The Department of CSE at JJCET is committed to producing highly skilled computer professionals through quality education and research. The department offers B.E. in Computer Science and Engineering.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        The department has well-equipped labs with modern computing facilities and experienced faculty members who are actively involved in research and consultancy.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        The department has a strong track record of placements in leading IT companies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+     <!-- COORDINATORS -->
+    <section id="coordinators" class="section section-white no-accent">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent" data-i18n="coordTitle">Workshop Coordinators</h2>
+                
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Coordinator -->
+                <div class="coordinator-card">
+                    <div class="coordinator-badge">Coordinator</div>
+                    <div class="coordinator-avatar coordinator-img">
+                        <img src="public/vijaykumar-sir.png" alt="Dr. P. Vijayakumar">
+                    </div>
+                    <h3 class="coordinator-name">Dr. P. Vijayakumar</h3>
+                    <p class="coordinator-designation">Professor & Dean (R&D)</p>
+                    <div class="coordinator-divider"></div>
+                    <p class="coordinator-institution">J.J. College of Engineering & Technology</p>
+                    <p class="coordinator-location">Trichy</p>
+                </div>
+                
+                <!-- Co-Coordinator -->
+                <div class="coordinator-card">
+                    <div class="coordinator-badge co-coordinator">Co-Coordinator</div>
+                    <div class="coordinator-avatar coordinator-img">
+                        <img src="public/padma-mam.png" alt="Dr. M. Padma">
+                    </div>
+                    <h3 class="coordinator-name">Dr. M. Padma</h3>
+                    <p class="coordinator-designation">Associate Professor / CSE</p>
+                    <div class="coordinator-divider"></div>
+                    <p class="coordinator-institution">J.J. College of Engineering & Technology</p>
+                    <p class="coordinator-location">Trichy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- INSTITUTIONAL LEADERSHIP -->
+    <section class="section section-alt">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading">
+                <h2 class="section-title section-title-accent">Institutional Leadership</h2>
+                <!-- <div class="section-divider"></div> -->
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Chief Patron -->
+                <div class="leadership-card">
+                    <div class="leadership-badge">Chief Patron</div>
+                    <div class="leadership-avatar">
+                        <span class="leadership-initials">SR</span>
+                    </div>
+                    <h3 class="leadership-name">Dr. S. Ramamoorthiy</h3>
+                    <p class="leadership-designation">Chairman</p>
+                    <div class="leadership-divider"></div>
+                    <p class="leadership-institution">J.J. Institutions &</p>
+                    <p class="leadership-institution">Sowdambikaa Group of Institutions</p>
+                </div>
+                
+                <!-- Patron -->
+                <div class="leadership-card">
+                    <div class="leadership-badge patron">Patron</div>
+                    <div class="leadership-avatar">
+                        <span class="leadership-initials">RC</span>
+                    </div>
+                    <h3 class="leadership-name">Shri R. Chenthur Selvan</h3>
+                    <p class="leadership-designation">Vice Chairman</p>
+                    <div class="leadership-divider"></div>
+                    <p class="leadership-institution">J.J. Institutions &</p>
+                    <p class="leadership-institution">Sowdambikaa Group of Institutions</p>
+                </div>
+                
+                <!-- Principal -->
+                <div class="leadership-card">
+                    <div class="leadership-badge principal">Principal</div>
+                    <div class="leadership-avatar">
+                        <span class="leadership-initials">PM</span>
+                    </div>
+                    <h3 class="leadership-name">Dr. P. Mathiyalagan</h3>
+                    <p class="leadership-designation">Principal</p>
+                    <div class="leadership-divider"></div>
+                    <p class="leadership-institution">J.J. College of Engineering</p>
+                    <p class="leadership-institution">& Technology, Trichy</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- WORKSHOP TOPICS -->
     <section id="topics" class="section section-alt">
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
                 <h2 class="section-title section-title-accent" data-i18n="topicsTitle">Contents to be Covered in Workshop</h2>
                 <br>
-                <div class="section-divider"></div>
+                <!-- <div class="section-divider"></div> -->
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -391,7 +545,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
                 <h2 class="section-title section-title-accent">Eligibility</h2>
-                <div class="section-divider"></div>
+                <!-- <div class="section-divider"></div> -->
             </div>
             
             <div class="max-w-3xl mx-auto">
@@ -413,7 +567,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
                 <h2 class="section-title section-title-accent">Participation Guidelines</h2>
-                <div class="section-divider"></div>
+                <!-- <div class="section-divider"></div> -->
             </div>
             
             <div class="max-w-3xl mx-auto">
@@ -459,7 +613,7 @@
             <div class="section-heading">
                 <h2 class="section-title section-title-accent">Important Dates</h2>
              
-                <div class="section-divider"></div>
+                <!-- <div class="section-divider"></div> -->
             </div>
             
             <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -509,7 +663,7 @@
                 <h2 class="section-title section-title-accent" data-i18n="regTitle">Registration</h2>
                 <br>
                 <p class="section-subtitle" data-i18n="regDesc">Registration has to be done compulsorily through ATAL portal.</p>
-                <div class="section-divider"></div>
+                <!-- <div class="section-divider"></div> -->
             </div>
             
             <div class="max-w-4xl mx-auto">
@@ -542,7 +696,7 @@
                         </div>
                         
                         <div class="flex-shrink-0">
-                            <a href="https://atalacademy.aicte.gov.in/login" target="_blank" class="btn-gold">
+                            <a href="https://atalacademy.aicte.gov.in/login" target="_blank" class="btn-gold" data-i18n="reg">
                                 Register Now
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -555,167 +709,14 @@
         </div>
     </section>
 
-    <!-- OBJECTIVES -->
-    <section class="section section-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="section-heading">
-                <h2 class="section-title section-title-accent">Objective of VAANI Scheme</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-5">
-                <div class="card">
-                    <div class="w-12 h-12 rounded-lg bg-[#c9a227]/10 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h4 class="topic-title">Skill Development</h4>
-                    <p class="topic-desc">Enhance practical skills in cutting-edge technologies</p>
-                </div>
-                <div class="card">
-                    <div class="w-12 h-12 rounded-lg bg-[#0d7377]/10 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-[#0d7377]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                        </svg>
-                    </div>
-                    <h4 class="topic-title">Industry Alignment</h4>
-                    <p class="topic-desc">Align with industry requirements and emerging trends</p>
-                </div>
-                <div class="card">
-                    <div class="w-12 h-12 rounded-lg bg-[#0a1929]/10 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-[#0a1929]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
-                    </div>
-                    <h4 class="topic-title">Knowledge Sharing</h4>
-                    <p class="topic-desc">Exchange between academia and industry experts</p>
-                </div>
-                <div class="card">
-                    <div class="w-12 h-12 rounded-lg bg-[#8B1538]/10 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-[#8B1538]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                        </svg>
-                    </div>
-                    <h4 class="topic-title">Research Promotion</h4>
-                    <p class="topic-desc">Encourage research in emerging technology areas</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT INSTITUTE -->
-    <section class="section section-alt">
-        <div class="max-w-7xl mx-auto">
-            <div class="section-heading">
-                <h2 class="section-title section-title-accent">About the Institute</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="card">
-                    <div class="flex flex-col lg:flex-row gap-8 items-start">
-                        <div class="flex-shrink-0">
-                            <img src="public/college-short.png" alt="JJCET" class="h-28 w-auto">
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-4">J.J. College of Engineering & Technology</h3>
-                            <p class="text-gray-700 leading-relaxed mb-4">
-                                JJCET is a premier engineering institution located in Trichy, Tamil Nadu. Established with a vision to provide quality technical education, the college offers undergraduate and postgraduate programs in various engineering disciplines.
-                            </p>
-                            <p class="text-gray-700 leading-relaxed">
-                                The institution is approved by AICTE and affiliated with Anna University, Chennai. JJCET is committed to excellence in technical education with state-of-the-art infrastructure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT DEPARTMENT -->
-    <section class="section section-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="section-heading">
-                <h2 class="section-title section-title-accent">About the Department</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="info-box">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Department of Computer Science & Engineering</h3>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        The Department of CSE at JJCET is committed to producing highly skilled computer professionals through quality education and research. The department offers B.E. in Computer Science and Engineering.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        The department has well-equipped labs with modern computing facilities and experienced faculty members who are actively involved in research and consultancy.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        The department has a strong track record of placements in leading IT companies.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- INSTITUTIONAL LEADERSHIP -->
-    <section class="section section-alt">
-        <div class="max-w-7xl mx-auto">
-            <div class="section-heading">
-                <h2 class="section-title section-title-accent">Institutional Leadership</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Chief Patron -->
-                <div class="leadership-card">
-                    <div class="leadership-badge">Chief Patron</div>
-                    <div class="leadership-avatar">
-                        <span class="leadership-initials">SR</span>
-                    </div>
-                    <h3 class="leadership-name">Dr. S. Ramamoorthiy</h3>
-                    <p class="leadership-designation">Chairman</p>
-                    <div class="leadership-divider"></div>
-                    <p class="leadership-institution">J.J. Institutions &</p>
-                    <p class="leadership-institution">Sowdambikaa Group of Institutions</p>
-                </div>
-                
-                <!-- Patron -->
-                <div class="leadership-card">
-                    <div class="leadership-badge patron">Patron</div>
-                    <div class="leadership-avatar">
-                        <span class="leadership-initials">RC</span>
-                    </div>
-                    <h3 class="leadership-name">Shri R. Chenthur Selvan</h3>
-                    <p class="leadership-designation">Vice Chairman</p>
-                    <div class="leadership-divider"></div>
-                    <p class="leadership-institution">J.J. Institutions &</p>
-                    <p class="leadership-institution">Sowdambikaa Group of Institutions</p>
-                </div>
-                
-                <!-- Principal -->
-                <div class="leadership-card">
-                    <div class="leadership-badge principal">Principal</div>
-                    <div class="leadership-avatar">
-                        <span class="leadership-initials">PM</span>
-                    </div>
-                    <h3 class="leadership-name">Dr. P. Mathiyalagan</h3>
-                    <p class="leadership-designation">Principal</p>
-                    <div class="leadership-divider"></div>
-                    <p class="leadership-institution">J.J. College of Engineering</p>
-                    <p class="leadership-institution">& Technology, Trichy</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- RESOURCE PERSONS -->
     <section id="speakers" class="section section-white">
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
-                <h2 class="section-title section-title-accent" data-i18n="speakersTitle">Resource Persons</h2>
+                <h2 class="section-title section-title-accent" data-i18n="speakersTitle">Resource Persons</h2><br>
                 <p class="section-subtitle" data-i18n="speakersDesc">Experts from academia and industry</p>
-                <div class="section-divider"></div>
+                <!-- <div class="section-divider"></div> -->
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -826,7 +827,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="section-heading">
                 <h2 class="section-title section-title-accent" data-i18n="contactTitle">Contact Details</h2>
-                <div class="section-divider"></div>
+                <!-- <div class="section-divider"></div> -->
             </div>
             
             <div class="max-w-2xl mx-auto">
@@ -853,7 +854,7 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold text-gray-900">Email</h4>
-                                <p class="text-gray-600 text-sm">[email@jjcet.ac.in]</p>
+                                <p class="text-gray-600 text-sm">principaljjcet@gmail.com</p>
                             </div>
                         </div>
                         
@@ -865,7 +866,9 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold text-gray-900">Phone</h4>
-                                <p class="text-gray-600 text-sm">[Contact Number]</p>
+                                <p class="text-gray-600 text-sm">9842811776</p>
+                                <p class="text-gray-600 text-sm">9865211776</p>
+                                
                             </div>
                         </div>
                     </div>
