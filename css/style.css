@@ -1770,14 +1770,6 @@ body {
     border: 4px solid white;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    overflow: hidden;
-}
-
-.coordinator-avatar.coordinator-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
 }
 
 .coordinator-card:hover .coordinator-avatar {
