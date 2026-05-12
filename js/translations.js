@@ -121,6 +121,37 @@ const translations = {
     dep_5:
       "The department has a strong track record of placements in leading IT companies.",
 
+      co1: "Coordinator",
+    co2: "PV",
+    co3: "Dr. P. Vijayakumar",
+    co4: "Professor & Dean (R&D)",
+    co5: "J.J. College of Engineering & Technology",
+    co6: "Trichy",
+
+    co7: "Co-Coordinator",
+    co8: "MP",
+    co9: "Dr. M. Padma",
+    co10: "Associate Professor / CSE",
+
+    in1: "Institutional Leadership",
+
+    in2: "Chief Patron",
+    in3: "Dr. S. Ramamoorthiy",
+    in4: "Chairman",
+    in5: "J.J. Institutions &",
+    in6: "Sowdambikaa Group of Institutions",
+
+    in7: "Patron",
+    in8: "Shri R. Chenthur Selvan",
+    in9: "Vice Chairman",
+
+    in10: "Principal",
+    in11: "Dr. P. Mathiyalagan",
+    in12: "Principal",
+    in13: "J.J. College of Engineering",
+    in14: "& Technology, Trichy",
+
+
     ta: {
         // Hero
         // heroBadge: "VAANI Sponsored Workshop",
@@ -250,7 +281,38 @@ const translations = {
     dep_5:
       "முன்னணி தகவல் தொழில்நுட்ப நிறுவனங்களில் சிறந்த பணியமர்த்தல் சாதனைகளை இத்துறை பெற்றுள்ளது.",
 
+      coordTitle: "ஒருங்கிணைப்பாளர்கள்",
 
+    co1: "முதன்மை ஒருங்கிணைப்பாளர்",
+    co2: "PV",
+    co3: "முனைவர் P. விஜயகுமார்",
+    co4: "பேராசிரியர் & முதல்வர் ஆராய்ச்சி மற்றும் மேம்பாடு",
+
+    co5: "ஜே.ஜே. பொறியியல் மற்றும் தொழில்நுட்பக் கல்லூரி",
+    co6: "திருச்சி",
+
+    co7: "இணை ஒருங்கிணைப்பாளர்",
+    co8: "MP",
+    co9: "முனைவர் M. பத்மா",
+    co10: "இணை பேராசிரியர் / கணினி அறிவியல் மற்றும் பொறியியல் துறை",
+
+    in1: "நிறுவன நிர்வாகம்",
+
+    in2: "முதன்மை பாதுகாவலர்",
+    in3: "முனைவர் எஸ். ராமமூர்த்தி",
+    in4: "தலைவர்",
+    in5: "ஜே.ஜே. கல்வி நிறுவனங்கள் &",
+    in6: "சௌடாம்பிகா கல்வி நிறுவனங்கள் குழுமம்",
+
+    in7: "பாதுகாவலர்",
+    in8: "திரு. ஆர். செந்தூர் செல்வன்",
+    in9: "துணை தலைவர்",
+
+    in10: "முதல்வர்",
+    in11: "முனைவர் பி. மதியழகன்",
+    in12: "முதல்வர்",
+    in13: "ஜே.ஜே. பொறியியல் கல்லூரி",
+    in14: "மற்றும் தொழில்நுட்பம், திருச்சி",
     }
 };
 
