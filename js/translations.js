@@ -107,7 +107,6 @@ const translations = {
 
     ins_4:
       "The institution is approved by AICTE and affiliated with Anna University, Chennai. JJCET is committed to excellence in technical education with state-of-the-art infrastructure.",
-    },
     dep_1: "About the Department",
 
     dep_2: "Department of Computer Science & Engineering",
@@ -151,6 +150,9 @@ const translations = {
     in13: "J.J. College of Engineering",
     in14: "& Technology, Trichy",
 
+    
+    },
+    
 
     ta: {
         // Hero
