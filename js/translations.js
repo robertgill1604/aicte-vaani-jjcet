@@ -150,6 +150,43 @@ const translations = {
     in13: "J.J. College of Engineering",
     in14: "& Technology, Trichy",
 
+     "topicsTitle": "Contents to be Covered in Workshop",
+
+    "topic_1_title": "Security Fundamentals",
+    "topic_1_desc": "Security Trends, Attacks, Mechanisms and Services",
+
+    "topic_2_title": "Mathematical Foundations",
+    "topic_2_desc": "GCD, Modular Arithmetic, Fermat & Euler Theorems, Chinese Remainder Theorem",
+
+    "topic_3_title": "Classical Encryption",
+    "topic_3_desc": "Classical Encryption Techniques, Groups, Rings, Fields",
+
+    "topic_4_title": "Encryption Techniques",
+    "topic_4_desc": "Substitution & Transposition Techniques, Primality Testing, Finite Fields, Discrete Logarithms",
+
+    "topic_5_title": "Block Ciphers",
+    "topic_5_desc": "DES, Triple DES, AES, RC5",
+
+    "topic_6_title": "Public Key Cryptography",
+    "topic_6_desc": "RSA, Diffie-Hellman Key Exchange",
+
+    "topic_7_title": "Elliptic Curve Cryptography",
+    "topic_7_desc": "ECC Principles and Applications",
+
+    "topic_8_title": "Hash Functions & MAC",
+    "topic_8_desc": "Hash Functions, MAC, MD5, SHA, HMAC, CMAC",
+
+    "topic_9_title": "Digital Signatures",
+    "topic_9_desc": "Digital Signatures, DSS, ElGamal, Schnorr",
+
+    "topic_10_title": "Authentication Protocols",
+    "topic_10_desc": "Authentication Protocols, Kerberos, X.509",
+
+    "topic_11_title": "IP Security & PKI",
+    "topic_11_desc": "IP Security, IPv6, IKE, PKI",
+
+    "topic_12_title": "Secure Transactions",
+    "topic_12_desc": "SSL/TLS, Secure Electronic Transactions, Recent Trends in Cryptography and Network Security"
     
     },
     
@@ -164,7 +201,7 @@ const translations = {
         // heroDateSub: "நேரடி Workshop",
         // heroCollege: "ஜெயலட்சுமி பொறியியல் கல்லூரி",
         // heroDept: "கணினி அறிவியல் மற்றும் பொறியியல் துறை",
-        heroBadge: "வாணி ஆதரவு பெற்ற பயிலரங்கம்",
+        heroBadge: "VAANI ஆதரவு பெற்ற பயிலரங்கம்",
         heroTitleLine: "அடுத்த தலைமுறை பாதுகாப்பு:",
         heroTitleHighlight: "குறியாக்கம் மற்றும் வலையமைப்பு பாதுகாப்பு",
         heroSubtitle: "மூன்று நாள் மேம்பட்ட பாதுகாப்பு பயிலரங்கம்",
@@ -174,7 +211,7 @@ const translations = {
         heroDept: "கணினி அறிவியல் மற்றும் பொறியியல் துறை",
         reg: "இப்போதே பதிவு செய்யுங்கள்",
         // About Section
-        aboutTitle: "AICTE வாணி திட்டம் பற்றி",
+        aboutTitle: "AICTE VAANI திட்டம் பற்றி",
         aboutDesc: "இந்தத் திட்டம், AICTE அங்கீகாரம் பெற்ற நிறுவனங்களுக்கு, தொழில்நுட்பக் கல்வியின் வளர்ந்து வரும் துறைகளில் 22 பிராந்திய மொழிகளில் மாநாடு/கருத்தரங்கு/பயிலரங்குகளை நடத்துவதற்கு நிதியுதவி வழங்குகிறது. இந்தியாவில் பயனுள்ள வளர்ச்சி நடவடிக்கைகளுக்கு உள்ளூர் மொழித் தொடர்பு இன்றியமையாதது. இந்திய மக்கள்தொகைக் கணக்கெடுப்பின்படி, 122 முக்கிய மொழிகள் மற்றும் 1599 இதர மொழிகளில், 30 மொழிகள் இந்தியாவின் பல்வேறு பகுதிகளில் பத்து லட்சத்திற்கும் அதிகமான தாய்மொழி பேசுபவர்களால் பேசப்படுகின்றன. எனவே, 'விக்ஷித் பாரத் 2047' கனவை அடைவதற்கு, பிராந்திய மொழிகளின் ஊடகத்தின் மூலம் அறிவைப் பரப்புவதும், கற்றல் செயல்முறையை வலுப்படுத்துவதும் அவசியமாகிறது. தொழில்நுட்பத் துறையில் சமீபத்திய போக்குகள்/புதுப்பிப்புகள்/புத்தாக்கங்கள் குறித்த பிராந்திய அளவிலான மாநாடுகள்/கருத்தரங்குகள்/பயிலரங்குகள் இத்திட்டத்தின் கீழ் ஆதரிக்கப்படுகின்றன. குறைந்தபட்சம் 2 நாட்கள் முதல் அதிகபட்சம் 3 நாட்கள் வரையிலும், குறைந்தபட்சம் 50 பங்கேற்பாளர்களுடனும் நடைபெறும் மாநாடு/கருத்தரங்கு/பயிலரங்கு இத்திட்டத்தின் கீழ் ஆதரிக்கப்படும்.",
         reg_1: "ATAL வழியாகப் பதிவு செய்யவும்",
         workshopTitle: "பயிலரங்கம் பற்றிய விவரங்கள்",
@@ -244,7 +281,7 @@ const translations = {
         navSpeakers: "உரையாளர்கள்",
         navRegister: "பதிவு",
 
-        obj_1: "வாணி திட்டத்தின் நோக்கங்கள்",
+        obj_1: "VAANI திட்டத்தின் நோக்கங்கள்",
 
     obj_2_0: "திறன் மேம்பாடு",
     obj_2_1: "முன்னேற்றமான தொழில்நுட்பங்களில் நடைமுறை திறன்களை மேம்படுத்துதல்",
@@ -315,6 +352,44 @@ const translations = {
     in12: "முதல்வர்",
     in13: "ஜே.ஜே. பொறியியல் கல்லூரி",
     in14: "மற்றும் தொழில்நுட்பம், திருச்சி",
+
+    "topicsTitle": "பயிலரங்கில் உள்ளடங்கிய தலைப்புகள்",
+
+    "topic_1_title": "பாதுகாப்பின் அடிப்படைகள்",
+    "topic_1_desc": "பாதுகாப்பு போக்குகள், தாக்குதல்கள், பாதுகாப்பு செயல்முறைகள் மற்றும் சேவைகள்",
+
+"topic_2_title": "கணித அடிப்படைகள்",
+"topic_2_desc": "GCD, தொகுதி கணிதம், Fermat மற்றும் Euler தேற்றங்கள், சீன மீதி தேற்றம்",
+
+"topic_3_title": "பாரம்பரிய குறியாக்கம்",
+"topic_3_desc": "பாரம்பரிய குறியாக்க முறைகள், குழுக்கள் (Groups), வளையங்கள் (Rings), புலங்கள் (Fields)",
+
+"topic_4_title": "குறியாக்க நுட்பங்கள்",
+"topic_4_desc": "பதிலீடு மற்றும் இடமாற்றம் முறைகள், பகாத்தன்மை சோதனை, முடிவுறு களங்கள், தனித்த மடக்கைகள்",
+
+"topic_5_title": "Block Cipher நுட்பங்கள்",
+"topic_5_desc": "DES, மும்மடங்கு DES, AES, RC5",
+
+"topic_6_title": "பொது திறவுகோல் குறியாக்கம்",
+"topic_6_desc": "RSA, Diffie-Hellman திறவுகோல் பரிமாற்றம்",
+
+"topic_7_title": "நீள்வட்ட வளைவு குறியாக்கம்",
+"topic_7_desc": "ECC கோட்பாடுகள் மற்றும் பயன்பாடுகள்",
+
+"topic_8_title": "ஹாஷ் செயல்பாடுகள் மற்றும் MAC",
+"topic_8_desc": "ஹாஷ் செயல்பாடுகள், MAC, MD5, SHA, HMAC, CMAC",
+
+   "topic_9_title": "மின்னணு கையொப்பங்கள்",
+"topic_9_desc": "மின்னணு கையொப்பங்கள், DSS, ElGamal, Schnorr",
+
+"topic_10_title": "அங்கீகார நெறிமுறைகள்",
+"topic_10_desc": "அங்கீகார நெறிமுறைகள், Kerberos, X.509",
+
+    "topic_11_title": "IP பாதுகாப்பு மற்றும் PKI",
+    "topic_11_desc": "IP பாதுகாப்பு, IPv6, IKE, PKI",
+
+    "topic_12_title": "பாதுகாப்பான பரிவர்த்தனைகள்",
+    "topic_12_desc": "SSL/TLS, பாதுகாப்பான மின்னணு பரிவர்த்தனைகள்,குறியாக்கம் மற்றும் வலையமைப்பு பாதுகாப்பு பற்றிய சமீபத்திய போக்குகள்"
     }
 };
 
