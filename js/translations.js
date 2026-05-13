@@ -186,8 +186,85 @@ const translations = {
     "topic_11_desc": "IP Security, IPv6, IKE, PKI",
 
     "topic_12_title": "Secure Transactions",
-    "topic_12_desc": "SSL/TLS, Secure Electronic Transactions, Recent Trends in Cryptography and Network Security"
+    "topic_12_desc": "SSL/TLS, Secure Electronic Transactions, Recent Trends in Cryptography and Network Security",
     
+    "eligibility_title": "ELIGIBILITY",
+
+    "eligibility_subtitle": "Who Can Participate?",
+
+    "eligibility_desc": "This course is open to all the PG Scholars, Research Scholars and Faculty members from AICTE approved institutions and Industry Personnel.",
+
+    "eligibility_box_1_title": "Academic Participants",
+
+    "eligibility_box_1_desc": "PG Scholars, Research Scholars and Faculty members from AICTE approved institutions.",
+
+    "eligibility_box_2_title": "Industry Professionals",
+
+    "eligibility_box_2_desc": "Industry personnel interested in Cyber Security and Cryptography.",
+
+    "guide_title": "Participation Guidelines",
+
+    "guide_1_title": "Registration Fee",
+    "guide_1_desc": "No registration fee for participation. Refreshments and lunch will be provided free of cost.",
+
+    "guide_2_title": "Selection Process",
+    "guide_2_desc": "Selection will be based on first-cum-first serve basis and confirmed candidates will be notified immediately.",
+
+    "guide_3_title": "Participant Limit",
+    "guide_3_desc": "The maximum number of participants is limited to 50.",
+
+    "guide_4_title": "Attendance Requirement",
+    "guide_4_desc": "Minimum 80% attendance is essential for participation and certification.",
+    
+    "dates_title": "Important Dates",
+
+    "date_1_label": "Registration Deadline",
+    "date_1_date": "01 October 2026",
+
+    "date_2_label": "Selection Intimation",
+    "date_2_date": "07 October 2026",
+
+    "date_3_label": "Workshop Dates",
+    "date_3_date": "16–18 October 2026" ,
+
+    "speakersTitle": "Resource Persons",
+    "speakersDesc": "Experts from academia and industry",
+
+    "speaker_1_name": "Mr. P. Ramesh",
+    "speaker_1_role": "Director, Platform Engineering & Cybersecurity",
+    "speaker_1_org": "ISB DQLabs, Chennai",
+
+    "speaker_2_name": "Dr. L. Jegatha Deborah",
+    "speaker_2_role": "Assistant Professor / CSE",
+    "speaker_2_org": "UCE, Thindivanam",
+
+    "speaker_3_name": "Dr. R. Nagarajan",
+    "speaker_3_role": "Professor / Mathematics",
+    "speaker_3_org": "JJCET, Trichy",
+
+    "speaker_4_name": "Dr. P. Vijayakumar",
+    "speaker_4_role": "Professor & Dean (R&D)",
+    "speaker_4_org": "JJCET, Trichy",
+
+    "speaker_5_name": "Dr. S. Bose",
+    "speaker_5_role": "Professor / CSE",
+    "speaker_5_org": "Anna University, Chennai",
+
+    "speaker_6_name": "Dr. A. Vadivel",
+    "speaker_6_role": "Associate Professor, Computer Application",
+    "speaker_6_org": "NIT Trichy",
+
+    "speaker_7_name": "Dr. K. Kulothungan",
+    "speaker_7_role": "Associate Professor / IST",
+    "speaker_7_org": "Anna University, Chennai",
+
+    "speaker_8_name": "Dr. I. Bremnavas",
+    "speaker_8_role": "Professor",
+    "speaker_8_org": "JAIN University, Bangalore",
+
+    "speaker_9_name": "Mr. S. Boopalan",
+    "speaker_9_role": "Senior Technical Manager",
+    "speaker_9_org": "Xoriant, Bangalore"
     },
     
 
@@ -237,8 +314,8 @@ const translations = {
         
         // Registration
         regTitle: "பதிவு",
-        regDesc: "ATAL Portal மூலம் கட்டாயமாக பதிவு செய்ய வேண்டும்",
-        regStep1: "ATAL Portal-ஐ திறக்கவும்",
+        regDesc: "ATAL வாயில் மூலம் கட்டாயமாக பதிவு செய்ய வேண்டும்",
+        regStep1: "ATAL வாயிலை செல்லவும்",
         regStep2: "உள்நுழையவும் அல்லது பதிவு செய்யவும்",
         regStep3: "பயிலரங்கம் பெயரை தேடவும்",
         regStep4: "விண்ணப்பத்தை சமர்ப்பிக்கவும்",
@@ -389,8 +466,88 @@ const translations = {
     "topic_11_desc": "IP பாதுகாப்பு, IPv6, IKE, PKI",
 
     "topic_12_title": "பாதுகாப்பான பரிவர்த்தனைகள்",
-    "topic_12_desc": "SSL/TLS, பாதுகாப்பான மின்னணு பரிவர்த்தனைகள்,குறியாக்கம் மற்றும் வலையமைப்பு பாதுகாப்பு பற்றிய சமீபத்திய போக்குகள்"
-    }
+    "topic_12_desc": "SSL/TLS, பாதுகாப்பான மின்னணு பரிவர்த்தனைகள்,குறியாக்கம் மற்றும் வலையமைப்பு பாதுகாப்பு பற்றிய சமீபத்திய போக்குகள்",
+      
+       "eligibility_title": "தகுதி",
+
+    "eligibility_subtitle": "யார் பங்கேற்கலாம்?",
+
+    "eligibility_desc": "இந்தப் பயிற்சி, AICTE அங்கீகரிக்கப்பட்ட கல்வி நிறுவனங்களிலுள்ள முதுநிலை மாணவர்கள், ஆராய்ச்சி மாணவர்கள், ஆசிரியர்கள் மற்றும் தொழில்துறை நிபுணர்கள் அனைவருக்கும் திறந்ததாகும்.",
+
+    "eligibility_box_1_title": "கல்வித் துறை பங்கேற்பாளர்கள்",
+
+    "eligibility_box_1_desc": "AICTE அங்கீகரிக்கப்பட்ட கல்வி நிறுவனங்களிலுள்ள முதுநிலை மாணவர்கள், ஆராய்ச்சி மாணவர்கள் மற்றும் ஆசிரியர்கள்.",
+
+    "eligibility_box_2_title": "தொழில்துறை நிபுணர்கள்",
+
+    "eligibility_box_2_desc": "Cyber Security மற்றும் Cryptography துறைகளில் ஆர்வமுள்ள தொழில்துறை நிபுணர்கள்.",
+
+       "guide_title": "பங்கேற்பு வழிமுறைகள்",
+
+    "guide_1_title": "பதிவு கட்டணம்",
+    "guide_1_desc": "பங்கேற்பிற்கு பதிவு கட்டணம் இல்லை. சிற்றுண்டி மற்றும் மதிய உணவு இலவசமாக வழங்கப்படும்.",
+
+    "guide_2_title": "தேர்வு நடைமுறை",
+    "guide_2_desc": "முதல் வருபவர்களுக்கு முதல் முன்னுரிமை அடிப்படையில் தேர்வு செய்யப்படும் மற்றும் தேர்வு செய்யப்பட்டவர்களுக்கு உடனடியாக தகவல் வழங்கப்படும்.",
+
+    "guide_3_title": "பங்கேற்பாளர் வரம்பு",
+    "guide_3_desc": "அதிகபட்சமாக 50 பேர் மட்டுமே பங்கேற்க அனுமதிக்கப்படுவர்.",
+
+    "guide_4_title": "வருகைப் பதிவு அவசியம்",
+    "guide_4_desc": "பங்கேற்பு மற்றும் சான்றிதழ் பெற குறைந்தபட்சம் 80% வருகை அவசியம்.",
+
+      "dates_title": "முக்கிய தேதிகள்",
+
+    "date_1_label": "பதிவு கடைசி தேதி",
+    "date_1_date": "01 அக்டோபர் 2026",
+
+    "date_2_label": "தேர்வு அறிவிப்பு",
+    "date_2_date": "07 அக்டோபர் 2026",
+
+    "date_3_label": "பயிலரங்கம் தேதிகள்",
+    "date_3_date": "அக்டோபர் 16 முதல் 18 வரை 2026",
+
+
+    "speakersTitle": "வள நிபுணர்கள்",
+    "speakersDesc": "கல்வித்துறை மற்றும் தொழில்துறையைச் சேர்ந்த நிபுணர்கள்",
+
+    "speaker_1_name": "திரு. பி. ரமேஷ்",
+    "speaker_1_role": "இயக்குனர், Platform Engineering & Cybersecurity",
+    "speaker_1_org": "ISB DQLabs, சென்னை",
+
+    "speaker_2_name": "முனைவர் எல். ஜெகதா டெபோரா",
+    "speaker_2_role": "உதவி பேராசிரியர் / CSE",
+    "speaker_2_org": "UCE, திண்டிவனம்",
+
+    "speaker_3_name": "முனைவர் ஆர். நாகராஜன்",
+    "speaker_3_role": "பேராசிரியர் / கணிதம்",
+    "speaker_3_org": "JJCET, திருச்சி",
+
+    "speaker_4_name": "முனைவர் பி. விஜயகுமார்",
+    "speaker_4_role": "பேராசிரியர் & முதல்வர் (R&D)",
+    "speaker_4_org": "JJCET, திருச்சி",
+
+    "speaker_5_name": "முனைவர் எஸ். போஸ்",
+    "speaker_5_role": "பேராசிரியர் / CSE",
+    "speaker_5_org": "அண்ணா பல்கலைக்கழகம், சென்னை",
+
+    "speaker_6_name": "முனைவர் ஏ. வடிவேல்",
+    "speaker_6_role": "இணை பேராசிரியர், கணினி பயன்பாடுகள்",
+    "speaker_6_org": "NIT திருச்சி",
+
+    "speaker_7_name": "முனைவர் கே. குலோத்துங்கன்",
+    "speaker_7_role": "இணை பேராசிரியர் / IST",
+    "speaker_7_org": "அண்ணா பல்கலைக்கழகம், சென்னை",
+
+    "speaker_8_name": "முனைவர் ஐ. பிரெம்நவாஸ்",
+    "speaker_8_role": "பேராசிரியர்",
+    "speaker_8_org": "JAIN பல்கலைக்கழகம், பெங்களூரு",
+
+    "speaker_9_name": "திரு. எஸ். பூபாலன்",
+    "speaker_9_role": "மூத்த தொழில்நுட்ப மேலாளர்",
+    "speaker_9_org": "Xoriant, பெங்களூரு",
+
+  }
 };
 
 // Language switcher functions
