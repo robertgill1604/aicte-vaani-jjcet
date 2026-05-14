@@ -615,15 +615,30 @@ body {
     color: var(--slate-blue);
     transition: color 0.3s ease;
 }
-
+body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+}
 /* Mobile Menu - Rich Enhanced */
 .mobile-menu-wrapper {
-    display: none;
+    position: fixed;
+    top: 82px;
+    left: 0;
+
+    width: 100%;
+    height: calc(100vh - 82px);
+
     background: linear-gradient(180deg, white 0%, rgba(245, 244, 240, 1) 100%);
-    border-top: 1px solid rgba(212, 175, 55, 0.2);
+
+    z-index: 9999;
+
+    overflow-y: auto;
+
     padding: 1.5rem;
+
     box-shadow: 0 24px 60px rgba(10, 25, 41, 0.18);
-    position: relative;
+
+    display: none;
 }
 
 .mobile-menu-wrapper:not(.hidden),
